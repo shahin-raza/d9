@@ -1,0 +1,14 @@
+uuid: f0172899-d8df-46eb-a8e5-182579508b8f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - shahinraza1@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

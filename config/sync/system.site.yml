@@ -1,0 +1,14 @@
+uuid: 272046ac-f4f6-4d78-8083-9936d22bb637
+name: 'Drupal 9'
+mail: shahinraza1@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
