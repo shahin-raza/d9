@@ -802,17 +802,12 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'drupal_9',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
 $settings['config_sync_directory'] = '../config/sync';
-$settings['file_public_path']      = 'sites/default/files';
-$settings['file_private_path']     = 'sites/default/files/private';
-$settings['file_temp_path']        = 'sites/default/files/tmpo';
+
+include __DIR__ . "/settings.pantheon.php";
+
+$local_settings = __DIR__ . "/settings.local.php";
+if (file_exists($local_settings)) {
+  include $local_settings;
+}
+
