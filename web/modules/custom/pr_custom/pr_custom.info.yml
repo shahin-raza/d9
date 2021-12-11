@@ -1,0 +1,5 @@
+name: PR Custom
+description: Provides the customization of sites.
+type: module
+core_version_requirement: ^8 || ^9
+package: Custom
